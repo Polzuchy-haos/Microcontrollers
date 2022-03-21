@@ -9,7 +9,7 @@
  * to which 7 segment indicators can be related. In case of an increase in the simultaneous number of parameter indications,
  * rewrite the handler function and / or use the library KDI_Menu_item.
  *
- * 			s						##### How to use this driver #####
+ * 					ы				##### How to use this driver #####
  * 1) Declare a structure KDI_Menu and fill it with zeros.
  * 2) Use functions KDI_Menu_Init for initialization.
  * 3) Use functions KDI_Menu_Add_Next and KDI_Menu_Add_Child create menu.
