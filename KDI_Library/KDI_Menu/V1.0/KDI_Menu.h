@@ -106,6 +106,12 @@ void KDI_Menu_Set_print_char(KDI_Menu* menu, void(*point)(char*));
 void KDI_Menu_Set_print_int(KDI_Menu* menu, void(*point)(int));
 void KDI_Menu_Set_print_float(KDI_Menu* menu, void(*point)(float));
 
+/*Function get pointer on MenuItem*/
+KDI_Menu_item* KDI_Menu_Get_Pointer_Current_Item(KDI_Menu* menu);
+KDI_Menu_item* KDI_Menu_Get_Pointer_Next_Item(KDI_Menu* menu);
+KDI_Menu_item* KDI_Menu_Get_Pointer_Last_Item(KDI_Menu* menu);
+KDI_Menu_item* KDI_Menu_Get_Pointer_Child_Item(KDI_Menu* menu);
+KDI_Menu_item* KDI_Menu_Get_Pointer_Parent_Item(KDI_Menu* menu);
 
 #ifdef __cplusplus
 }

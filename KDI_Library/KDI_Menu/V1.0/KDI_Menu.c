@@ -618,6 +618,71 @@ void KDI_Menu_Set_print_float(KDI_Menu* menu, void(*point)(float)){
 	menu->print_float = point;
 }
 
+/**
+  * @brief 		Get pointer on current item
+  *
+  * @param  	Pointer on KDI_Menu
+  * @return 	Pointer on KDI_Menu_item*
+  */
+
+KDI_Menu_item* KDI_Menu_Get_Pointer_Current_Item(KDI_Menu* menu){
+
+	/* Return pointer on current menu item*/
+	return menu->pointer;
+}
+
+/**
+  * @brief 		Get pointer on next item
+  *
+  * @param  	Pointer on KDI_Menu
+  * @return 	Pointer on KDI_Menu_item*
+  */
+
+KDI_Menu_item* KDI_Menu_Get_Pointer_Next_Item(KDI_Menu* menu){
+
+	/* Return pointer on next menu item*/
+	return menu->pointer->next_item;
+}
+
+/**
+  * @brief 		Get pointer on Last item
+  *
+  * @param  	Pointer on KDI_Menu
+  * @return 	Pointer on KDI_Menu_item*
+  */
+
+KDI_Menu_item* KDI_Menu_Get_Pointer_Last_Item(KDI_Menu* menu){
+
+	/* Return pointer on last menu item*/
+	return menu->pointer->last_item;
+}
+
+/**
+  * @brief 		Get pointer on child item
+  *
+  * @param  	Pointer on KDI_Menu
+  * @return 	Pointer on KDI_Menu_item*
+  */
+
+KDI_Menu_item* KDI_Menu_Get_Pointer_Child_Item(KDI_Menu* menu){
+
+	/* Return pointer on child menu item*/
+	return menu->pointer->child_item;
+}
+
+/**
+  * @brief 		Get pointer on parent item
+  *
+  * @param  	Pointer on KDI_Menu
+  * @return 	Pointer on KDI_Menu_item*
+  */
+
+KDI_Menu_item* KDI_Menu_Get_Pointer_Parent_Item(KDI_Menu* menu){
+
+	/* Return pointer on parent menu item*/
+	return menu->pointer->parent_item;
+}
+
 #ifdef __cplusplus
 }
 #endif
